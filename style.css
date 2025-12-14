@@ -6,6 +6,7 @@
      --section-padding: 50px; 
     --font-type: Arial, Helvetica, sans-serif;
  }
+/*Home Section */
  .home { padding:
     var(--section-padding); 
     background: url('/image/bg.png') no-repeat center/cover;
@@ -99,4 +100,52 @@
             font-size: 42px;
          } 
         }   
+/*Advantages Section*/
+.advantages {
+    padding: var(--section-padding);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 150px;
+    background-color: var(--primary-text);
+    font-family: var(--font-type);
+}
 
+.advantages div {
+    padding: 15px 10px;
+    text-align: center;
+    border-radius: 2px;
+    background-color: var(--primary-text);
+        box-shadow: 0 0 10px rgba(24, 137, 141, 0.6);
+
+
+}
+
+.advantages img {
+    width: 35px;
+    margin-bottom: 10px;
+}
+
+.advantages h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: var(--black-color);
+}
+
+.advantages p {
+    font-size: 15px;
+    line-height: 1.4;
+    color: #555;
+}
+@media (max-width: 900px) {
+    .advantages {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .advantages {
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+    }
+}
