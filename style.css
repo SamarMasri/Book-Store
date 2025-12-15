@@ -1,6 +1,30 @@
 :root {
     --primary-color: #089da1;
     --primary-text: white;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+nav{
+position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ background: #fff;
+border-bottom: 1px solid hsl(0, 0%, 90%);
+box-shadow:0 3px 3px
+ rgb(130, 225, 236);
+}
+.icon{
+    display: flex;
+    margin-left: 400px;
+}
+
+:root { 
+    --primary-color: #089da1; 
+    --primary-text: white; 
     --dark-color: #227376;
     --black-color: black;
     --section-padding: 50px;
@@ -206,6 +230,68 @@
     color: var(--primary-text);
 }
 
+/* review */
+.reviews{
+    width: 100%;
+    height: 100vh;
+}
+
+.reviews h1{
+    text-align: center;
+    font-size: 50px;
+    padding-top: 55px;
+}
+
+.reviews .reviews_box{
+
+    
+
+     width: 95%;
+    margin: 15px auto;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+
+}
+
+.reviews .reviews_box .reviews_card{
+    width: 100%;
+    box-shadow: 0 0 8px #089da1;
+    padding: 15px;
+    margin: 0 12px;
+}
+
+.reviews .reviews_box .reviews_card i{
+float: right;
+font-size: 120px;
+bottom: 20px;
+color: #eaeaea;
+position: static;
+
+}
+
+.reviews .reviews_box .reviews_card .card_top img{
+  width: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.reviews .reviews_box .reviews_card .card p{
+    margin: 10px 0 10px 0;
+text-align: justify;
+line-height: 22px;
+}
+
+.reviews .reviews_box .reviews_card .card .review-icon i{
+
+    font-size: 16px;
+    margin-top: 20px;
+color: #089da1;
+padding: 0 1px;
+float: left;
+}
+
 
 
 @media (max-width: 1024px) {
@@ -290,3 +376,74 @@
 
     .book-card { width: 7.5rem; flex-shrink: 0; }
 }
+}
+/* About Section*/
+
+
+.AboutUS{
+width: 100%;
+height: auto;
+padding: 20px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.AboutUS .about_img img{
+    width: 800px;
+}
+
+.AboutUS .about_tag p{
+    line-height: 22px;
+    width: 650px;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.AboutUS .about_tag .about_btn{
+    padding: 10px 20px;
+    background-color: #089da1;
+    text-decoration: none;
+    color: #fff;
+    top: 50px;
+    position: static;
+}
+.AboutUS .about_tag p{
+    margin-bottom: 90px;
+}
+.AboutUS {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  .AboutUS .about_img img {
+    width: 100%;
+    max-width: 780px;
+  }
+
+  .AboutUS .about_tag p {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+@media (max-width:992px) {
+  /* ===== REVIEWS ===== */
+  .reviews {
+    height: auto;
+  }
+
+  .reviews h1 {
+    font-size: 36px;
+  }
+
+  .reviews .reviews_box {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .reviews .reviews_box .reviews_card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
+  
