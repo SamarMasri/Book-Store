@@ -145,7 +145,9 @@
     border: 1px solid rgba(78, 77, 78, 0.7);
     text-align: center;
     width: 12.5rem;
-    padding: .625rem;
+    padding-left: 15px;
+    padding-right: 15px;
+   padding-bottom: 20px;
     flex-shrink: 0;
     font-family: var(--font-type);
 }
@@ -195,16 +197,91 @@
     background-color: var(--primary-text);
     color: var(--black-color);            
     font-size: 14px;
-    border: 1px solid var(--primary-color); 
+    border: 2px solid var(--primary-color); 
     border-radius: 3px;
     text-decoration: none;
     transition: 0.3s ease;
+    font-family: var(--primary-text);
 }
 
 .f_btn:hover {
     background-color: var(--primary-color);
     color: var(--primary-text);
 }
+
+
+
+
+/*New Arriavls*/
+
+.Arrivals {
+    padding: 5px;
+}
+
+.Arrivals .heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-family: var(--font-type);
+}
+.arrivals-container {
+    display: grid;
+    grid-template-columns: repeat(5, 12.5rem);
+    column-gap: 80px; 
+    row-gap: 25px; 
+    justify-content: center;
+    justify-items: center; 
+    margin: 0 auto;
+    
+}
+
+
+.book-card2 {
+  border: 1px solid rgba(78, 77, 78, 0.7);
+  text-align: center;
+  width: 12.5rem; 
+ font-family: var(--font-type);
+ padding-left: 15px;
+padding-right: 15px;
+ padding-bottom: 20px;
+overflow: hidden;
+}
+
+.book-card2 img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: transform 0.4s ease;
+}
+.book-card2:hover img {
+    transform: scale(1.1);
+}
+
+
+.book-card2 h3 {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+
+.book-card2 .star {
+    color: var(--primary-color); 
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+
+
+.book-card2:hover {
+    box-shadow: 0 0 10px rgba(24,137,141,0.4);
+    transform: translateY(-5px);
+}
+
+
+
+
+
 
 
 
@@ -226,6 +303,9 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
     }
+   .arrivals-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 
@@ -240,6 +320,9 @@
 
     .featured .heading { font-size: 2rem; }
     .book-card { width: 10rem; }
+    .arrivals-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 
@@ -267,6 +350,13 @@
     .book-card { 
         width: 8.5rem; 
         flex-shrink: 0; }
+        .arrivals-container {
+        grid-template-columns: 1fr;
+    }
+     .arrivals-container {
+    grid-template-columns: 1fr;
+  }
+    
 }
 
 
@@ -288,5 +378,11 @@
         padding-bottom: 0.5rem;
     }
 
-    .book-card { width: 7.5rem; flex-shrink: 0; }
+    .book-card { width: 7.5rem; 
+        flex-shrink: 0;
+     }
+
+    .arrivals-container {
+        grid-template-columns: 1fr; 
+    }
 }
