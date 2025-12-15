@@ -207,35 +207,86 @@
 }
 
 
-@media (max-width: 900px) {
+
+@media (max-width: 1024px) {
     .row {
-         flex-direction: column; 
-         text-align: center; 
-         gap: 40px; 
-        }
-    .content, .image { 
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    .content, .image {
         max-width: 100%;
-     }
-    .bookshelf { width: 100%; }
-    .advantages { 
+        padding: 0 20px;
+    }
+    .bookshelf {
+        width: 80%;
+        margin-top: 0;
+    }
+    .advantages {
         grid-template-columns: repeat(2, 1fr);
-         gap: 30px;
-         }
+        gap: 30px;
+    }
 }
 
-@media (max-width: 600px) {
-    .title1 { 
-        font-size: 38px;
-     }
-    .title2 {
-         font-size: 42px; 
-        }
+
+@media (max-width: 768px) {
+    .title1 { font-size: 42px; }
+    .title2 { font-size: 44px; }
+    .btn { font-size: 15px; 
+        padding: 10px 20px;
+         display: inline-block; }
+
+    .bookshelf { width: 100%; }
+
+    .featured .heading { font-size: 2rem; }
+    .book-card { width: 10rem; }
+}
+
+
+@media (max-width: 414px) {
+    .title1 { font-size: 36px; }
+    .title2 { font-size: 38px; }
     .btn { 
-        font-size: 16px; 
-        padding: 12px 20px; 
-    }
+        font-size: 14px; 
+        padding: 8px 16px; 
+        display: inline-block; }
+
     .advantages { 
         grid-template-columns: 1fr; 
-        padding: 30px 20px; 
+        padding: 20px; }
+    .featured .heading { font-size: 1.8rem; }
+
+    .books-container {
+        display: flex;
+        gap: 0.75rem;
+        overflow-x: auto; 
+        white-space: nowrap;
+        padding-bottom: 0.5rem;
     }
+
+    .book-card { 
+        width: 8.5rem; 
+        flex-shrink: 0; }
+}
+
+
+@media (max-width: 375px) {
+    .title1 { font-size: 32px; }
+    .title2 { font-size: 34px; }
+    .btn { font-size: 13px; 
+        padding: 6px 12px; 
+        display: inline-block; 
+    }
+
+    .featured .heading { font-size: 1.6rem; }
+
+    .books-container {
+        display: flex;
+        gap: 0.5rem;
+        overflow-x: auto; 
+        white-space: nowrap;
+        padding-bottom: 0.5rem;
+    }
+
+    .book-card { width: 7.5rem; flex-shrink: 0; }
 }
