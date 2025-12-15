@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Store</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/all.min.css">    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
 </head>
 
 <body>
@@ -15,26 +17,29 @@
     <nav>
         <div class="container">
             <div class="flex">
-            <img src="images/logo1.png" alt="logo1">
-        <ul class="flex">
-            <li><a href="" class="co">Home</a></li>
-            <li><a href="" class="co">About</a></li>
-            <li><a href="" class="co">Featured</a></li>
-            <li><a href="" class="co">Arraivals</a></li>
-            <li><a href="" class="co">Reviews</a></li>
-            <li><a href="" class="co">Blog</a></li>
+            <img src="image/logo.png" alt="">
+<input type="checkbox" id="menue-toggle" hidden>
+        <ul class="flex" style="backdrop-filter: blur(10px); background-color: rgba(248, 251, 251, 0.133);">
+            <li><a href="#home" class="co">Home</a></li>
+            <li><a href="#about" class="co">About</a></li>
+            <li><a href="#featured" class="co">Featured</a></li>
+            <li><a href="#arraivals" class="co">Arraivals</a></li>
+            <li><a href="#reviews" class="co">Reviews</a></li>
+            <li><a href="#blog" class="co">Blog</a></li>
+        </ul>
             <div class="icon">
  <i class="fa-solid fa-magnifying-glass"></i>
         <i class="fa-solid fa-heart"></i>
+        <label for="menue-toggle">
+        <i class="fa-solid fa-bars"></i>
+        </label>
             </div>
-           
         </div>
         </div>
          
-    </div>
+   
     </nav>
     </section>
-
 
     <!--Home Section-->
     <header class="home" id="home">
@@ -54,25 +59,7 @@
 
             
 
-<section class="home" id="home">
 
-
-    <div class="row">
-
-        <div class="content">
-
-            <h1 class="title1">WELCOME TO</h1>
-            <h1 class="title2">BOOK STORE</h1>
-
-            <p class="contentP">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Assumenda molestias atque laborum non fuga ex deserunt.
-                Exercitationem velit ducimus praesentium, obcaecati hic
-                voluptate id tenetur fuga illum quidem omnis? Rerum?
-            </p>
-
-            <a href="#" class="btn">Learn More</a>
-        </div>
     </header>
 <!--Advantages Section-->
     <section class="advantages">
@@ -261,7 +248,7 @@
         <div class="reviews_card">
          <i class="fa-duotone fa-solid fa-quote-right"></i>
             <div class="card_top">
-                <img src="images/review_1.png" alt="">
+                <img src="./image/review_1.png" alt="">
             </div>
 
             <div class="card">
@@ -286,33 +273,7 @@
         <div class="reviews_card">
             <i class="fa-duotone fa-solid fa-quote-right"></i>
             <div class="card_top">
-                <img src="images/review_2.png" alt="">
-            </div>
-
-            <div class="card">
-                <h2>John Deo</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Reprehenderit dolorem veniam quod tempora, 
-                    incidunt voluptas pariatur suscipit perferendis rem explicabo voluptatum, quia magni libero eveniet nisi neque,
-                     voluptatem at.
-                     Exercitationem quibusdam praesentium est dolores quia placeat tempora eum pariatur iure.
-                </p>
-                <div class="review-icon">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-duotone fa-solid fa-star-half-stroke"></i>
-                </div>
-            </div>  
-        </div>
-
-
-        <div class="reviews_card">
-            <i class="fa-duotone fa-solid fa-quote-right"></i>
-            <div class="card_top">
-                <img src="images/review_3.png" alt="">
+                <img src="image/review_2.png" alt="">
             </div>
 
             <div class="card">
@@ -338,7 +299,33 @@
         <div class="reviews_card">
             <i class="fa-duotone fa-solid fa-quote-right"></i>
             <div class="card_top">
-                <img src="images/review_4.png" alt="">
+                <img src="image/review_3.png" alt="">
+            </div>
+
+            <div class="card">
+                <h2>John Deo</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Reprehenderit dolorem veniam quod tempora, 
+                    incidunt voluptas pariatur suscipit perferendis rem explicabo voluptatum, quia magni libero eveniet nisi neque,
+                     voluptatem at.
+                     Exercitationem quibusdam praesentium est dolores quia placeat tempora eum pariatur iure.
+                </p>
+                <div class="review-icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-duotone fa-solid fa-star-half-stroke"></i>
+                </div>
+            </div>  
+        </div>
+
+
+        <div class="reviews_card">
+            <i class="fa-duotone fa-solid fa-quote-right"></i>
+            <div class="card_top">
+                <img src="image/review_4.png" alt="">
             </div>
 
             <div class="card">
@@ -362,7 +349,10 @@
      </div>
 </div>
 
-
+<div class="banner">
+    <a href="#" class="banner-btn">Learn More</a>
+    <img src="images/banner.jpg" alt="">
+</div>
     
 </body>
 </html>
